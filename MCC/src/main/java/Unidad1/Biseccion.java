@@ -28,7 +28,7 @@ public class Biseccion {
             do{
                r = (a+b)/2;
                 System.out.println(r);
-                if ((f(a)*f(r)) < 0) {
+                if ((f(a)*f(r)) <= 0) {
                     b = r;
                 } else {
                     a = r;
