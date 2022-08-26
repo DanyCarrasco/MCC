@@ -24,7 +24,7 @@ public class Biseccion {
         System.out.println("ingrese el calor del error E: ");
         E = TecladoIn.readLineDouble();
         System.out.println();
-        if ((f(a)*f(b)) < 0) {
+        if ((f(a)*f(b)) <= 0) {
             do{
                r = (a+b)/2;
                 System.out.println(r);
