@@ -24,16 +24,17 @@ public class Biseccion {
         System.out.println("ingrese el calor del error E: ");
         E = TecladoIn.readLineDouble();
         System.out.println();
-        if ((f(a)*f(b)) <= 0) {
+        if ((f(a)*f(b)) < 0) {
             do{
                r = (a+b)/2;
                 System.out.println(r);
-                if ((f(a)*f(r)) <= 0) {
+                if ((f(a)*f(r)) < 0) {
                     b = r;
                 } else {
                     a = r;
                 }
             }while(Math.abs(f(r)) <= E);
+            System.out.println("Raíz aproximada: "+ r);
         } else {
             System.out.println("No se cumple la condicion inicial f(a)*f(b)<0");
         }
