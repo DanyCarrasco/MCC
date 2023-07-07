@@ -12,7 +12,7 @@ import Util.TecladoIn;
  */
 public class Trapecio {
     public static double f(double x){
-        return Math.tan(x);
+        return Math.sin(x);
     }
     
     public static void main(String[] args) {
